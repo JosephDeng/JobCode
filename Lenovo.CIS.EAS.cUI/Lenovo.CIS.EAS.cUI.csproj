@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E83A1213-9736-40EF-8C31-7E8C658CE6D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lenovo.CIS.EAS.cUI</RootNamespace>
+    <AssemblyName>Lenovo.CIS.EAS.cUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\LenovoClient\AppDll\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Lenovo.HIS.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LenovoClient\AppDll\Lenovo.HIS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Lenovo.HIS.cUtils, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\LenovoGit\LenovoClient\AppDll\Lenovo.HIS.cUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Lenovo.HIS.Entities, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\PubConstEas.cs" />
+    <Compile Include="Common\PubFuncEas.cs" />
+    <Compile Include="Common\StringExtend.cs" />
+    <Compile Include="DialogForm\fmBasicDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogForm\fmBasicDataEdit.Designer.cs">
+      <DependentUpon>fmBasicDataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmAssayApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmAssayApply.Designer.cs">
+      <DependentUpon>fmAssayApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmAssayCatalogMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmAssayCatalogMaintain.designer.cs">
+      <DependentUpon>fmAssayCatalogMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmAssayCatalogMappingItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmAssayCatalogMappingItem.Designer.cs">
+      <DependentUpon>fmAssayCatalogMappingItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmAssayItemMappingCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmAssayItemMappingCharge.Designer.cs">
+      <DependentUpon>fmAssayItemMappingCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogForm\fmAssayItemSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogForm\fmAssayItemSelection.Designer.cs">
+      <DependentUpon>fmAssayItemSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogForm\fmAssayPackageMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogForm\fmAssayPackageMaintain.Designer.cs">
+      <DependentUpon>fmAssayPackageMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmBasicDataMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmBasicDataMaintain.Designer.cs">
+      <DependentUpon>fmBasicDataMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmBloodApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmBloodApply.Designer.cs">
+      <DependentUpon>fmBloodApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmCatalogMappingItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmCatalogMappingItem.Designer.cs">
+      <DependentUpon>fmCatalogMappingItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmCheckPointMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmCheckPointMaintain.Designer.cs">
+      <DependentUpon>fmCheckPointMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmDasTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmDasTest.Designer.cs">
+      <DependentUpon>fmDasTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmExamApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmExamApply.Designer.cs">
+      <DependentUpon>fmExamApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmExamCatalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmExamCatalog.Designer.cs">
+      <DependentUpon>fmExamCatalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmExamClassType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmExamClassType.Designer.cs">
+      <DependentUpon>fmExamClassType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmExamPathologyApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmExamPathologyApply.Designer.cs">
+      <DependentUpon>fmExamPathologyApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmOperationApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmOperationApply.Designer.cs">
+      <DependentUpon>fmOperationApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmProjectMappingCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmProjectMappingCharge.Designer.cs">
+      <DependentUpon>fmProjectMappingCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\fmShowImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\fmShowImg.Designer.cs">
+      <DependentUpon>fmShowImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Plugin\" />
+    <Folder Include="UserControls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DialogForm\fmBasicDataEdit.resx">
+      <DependentUpon>fmBasicDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmAssayApply.resx">
+      <DependentUpon>fmAssayApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmAssayCatalogMaintain.resx">
+      <DependentUpon>fmAssayCatalogMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmAssayCatalogMappingItem.resx">
+      <DependentUpon>fmAssayCatalogMappingItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmAssayItemMappingCharge.resx">
+      <DependentUpon>fmAssayItemMappingCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogForm\fmAssayItemSelection.resx">
+      <DependentUpon>fmAssayItemSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogForm\fmAssayPackageMaintain.resx">
+      <DependentUpon>fmAssayPackageMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmBasicDataMaintain.resx">
+      <DependentUpon>fmBasicDataMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmBloodApply.resx">
+      <DependentUpon>fmBloodApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmCatalogMappingItem.resx">
+      <DependentUpon>fmCatalogMappingItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmCheckPointMaintain.resx">
+      <DependentUpon>fmCheckPointMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmDasTest.resx">
+      <DependentUpon>fmDasTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmExamApply.resx">
+      <DependentUpon>fmExamApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmExamCatalog.resx">
+      <DependentUpon>fmExamCatalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmExamClassType.resx">
+      <DependentUpon>fmExamClassType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmExamPathologyApply.resx">
+      <DependentUpon>fmExamPathologyApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmOperationApply.resx">
+      <DependentUpon>fmOperationApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmProjectMappingCharge.resx">
+      <DependentUpon>fmProjectMappingCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\fmShowImg.resx">
+      <DependentUpon>fmShowImg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lenovo.CIS.EAS.cBusiness\Lenovo.CIS.EAS.cBusiness.csproj">
+      <Project>{2c04e082-53f4-4133-b909-043d7424173c}</Project>
+      <Name>Lenovo.CIS.EAS.cBusiness</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lenovo.CIS.EAS.Entities\Lenovo.CIS.EAS.Entities.csproj">
+      <Project>{49B9BE5B-D277-4041-A64C-28A8C6225278}</Project>
+      <Name>Lenovo.CIS.EAS.Entities</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,6 @@
+D:\JobCode\Lenovo.CIS.EAS\Lenovo.CIS.EAS\Lenovo.CIS.EAS.cBusiness\obj\Debug\Lenovo.CIS.EAS.cBusiness.csprojResolveAssemblyReference.cache
+D:\JobCode\Lenovo.CIS.EAS\Lenovo.CIS.EAS\Lenovo.CIS.EAS.cBusiness\obj\Debug\Lenovo.CIS.EAS.cBusiness.csproj.CoreCompileInputs.cache
+D:\JobCode\LenovoClient\AppDll\Lenovo.CIS.EAS.cBusiness.dll
+D:\JobCode\LenovoClient\AppDll\Lenovo.CIS.EAS.cBusiness.pdb
+D:\JobCode\Lenovo.CIS.EAS\Lenovo.CIS.EAS\Lenovo.CIS.EAS.cBusiness\obj\Debug\Lenovo.CIS.EAS.cBusiness.dll
+D:\JobCode\Lenovo.CIS.EAS\Lenovo.CIS.EAS\Lenovo.CIS.EAS.cBusiness\obj\Debug\Lenovo.CIS.EAS.cBusiness.pdb
